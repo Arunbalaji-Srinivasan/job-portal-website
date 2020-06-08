@@ -1,0 +1,32 @@
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Job Search App</title>
+
+<link rel="stylesheet" href="<c:url value="/resources/css/home.css"/>">
+<link rel="stylesheet"
+	href="<c:url value="https://www.w3schools.com/w3css/4/w3.css"/> ">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<div align="center">
+	<a class="btn btn-primary" href="user/login.htm">User Login</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-primary"
+		href="job/viewAllPostings.htm">All Active Postings</a>
+</div>
+<br>
+
+<c:set var="contextPath" value="${pageContext.request.contextPath}" />
+
+</body>
+</html>
